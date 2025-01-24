@@ -30,3 +30,4 @@ int main(){
 }
 // g++ -Iinclude -c src/student.c -o build/student.o
 // g++ ./build/student.o -o ./build/student.exe -l bgi -l gdi32 -l comdlg32 -l uuid -l oleaut32 -l ole32
+// ./build/student.exe
