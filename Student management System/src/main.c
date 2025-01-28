@@ -70,7 +70,15 @@ int main(){
             break;
         case 4 : //4.delet : remove a record from dataset
         
-         printf("this function is not implimented yet");
+        int srno;
+        printf("Enter the sr.no number of the student whose data you want to delete:");
+        scanf("%d",&srno);
+        for (int i = srno-1; i < totalstudent; i++){
+            data[i]=data[i+1];
+        }
+        totalstudent--;
+        printf("data deleted successfully");
+        
             break;
         default: 
             break;
