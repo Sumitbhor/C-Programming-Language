@@ -20,3 +20,6 @@ printf("account of saurav");
 display(&accSaurav);
     return 0;
 }
+//g++ -Iinclude -c ./src/main.c -o ./build/main.o 
+//g++ -Iinclude -c ./src/account.c -o ./build/account.o 
+//g++ -Iinclude -c ./src/hdfcbank.c -o ./build/hdfcbank.o 

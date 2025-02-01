@@ -8,7 +8,7 @@ void createAccount(struct Account *account,
     account->accountNumber=accountNumber;
     strcpy(account->accountHolderName, AccountHolderName);
     account->accountBalance=accountBalnce;
-    strcpy(account->accountType); 
+    strcpy(account->accountType,accountType); 
 }
 
 void deposit(struct Account *account, float amount ){
@@ -20,9 +20,9 @@ void withdraw(struct Account *account , float amount){
 }
 
 void display(struct Account *account){
-    printf("Account number : %d\n",account->accountNumber);
-    printf("Account number Holder Name : %s\n",account->accountHolderName);
+    printf("\nAccount number : %d\n",account->accountNumber);
+    printf("Account Holder Name : %s\n",account->accountHolderName);
     printf("Account balance : %f\n",account->accountBalance);
-    printf("Account number : %dsn",account->accountType);
+    printf("Account type : %ssn",account->accountType);
 
 }
