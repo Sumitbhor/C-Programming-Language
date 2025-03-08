@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/hp/OneDrive/Desktop/TAP/git hub/C-Programming-Language/FILE IO Code",
-      "program": "c:/Users/hp/OneDrive/Desktop/TAP/git hub/C-Programming-Language/FILE IO Code/build/Debug/outDebug",
+      "cwd": "c:/Users/hp/OneDrive/Desktop/TAP/git hub/C-Programming-Language/Basic C codes",
+      "program": "c:/Users/hp/OneDrive/Desktop/TAP/git hub/C-Programming-Language/Basic C codes/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
