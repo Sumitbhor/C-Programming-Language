@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -9,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/hp/OneDrive/Desktop/TAP/Dynamic Array/src",
-      "program": "c:/Users/hp/OneDrive/Desktop/TAP/Dynamic Array/src/build/Debug/outDebug",
+      "cwd": "c:/Users/hp/OneDrive/Desktop/TAP/git hub/C-Programming-Language/Dynamic Array/src",
+      "program": "c:/Users/hp/OneDrive/Desktop/TAP/git hub/C-Programming-Language/Dynamic Array/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
