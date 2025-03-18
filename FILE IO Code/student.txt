@@ -1,4 +1,4 @@
-Name :sanika
-rollno :1
-age :1
-marks :1
+Name :sumit
+rollno :4
+age :56
+marks :565

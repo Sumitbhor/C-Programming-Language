@@ -1,0 +1,2 @@
+void accept();
+void display();

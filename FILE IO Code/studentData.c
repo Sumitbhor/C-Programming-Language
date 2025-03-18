@@ -13,7 +13,7 @@ struct studentData
 
  void acceptData(struct studentData *s1){
     printf("Enter name of student : ");
-    scanf("%s", &s1->studentName);
+    scanf("%s", s1->studentName);
 
     printf("enter roll no of student : ");
     scanf("%d",&s1->rollNo);
@@ -66,9 +66,9 @@ void readFile(){
 
 int main()
 {   struct studentData s1;
-    //acceptData(&s1);
-    // displayData(s1);
-   //writeNewFile(s1);
+   // acceptData(&s1);
+  //displayData(s1);
+ //writeNewFile(s1);
    readFile();
     return 1;
 }

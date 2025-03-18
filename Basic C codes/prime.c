@@ -1,28 +1,34 @@
-#include"../include/decision_making.h"
-void prime()
+#include <stdio.h>
+#include <math.h>
+
+int main()
 {
-    int i,no,flag=0;
-    printf("\nenter your number");
-    scanf("%d",&no);
-     if (no<2)
-        {
-            printf("\nthis is not prime number");
-        }
-    for (i=2;i<sqrt(no);i++)
+    int no, i, flag = 0;
+
+    printf("Enter any number: ");
+    scanf("%d", &no);
+
+    // Special case: numbers less than 2 are not prime
+    if (no < 2) {
+        printf("Number is not prime\n");
+        return 0;
+    }
+
+    // Check for factors up to the square root of the number
+    for (i = 2; i <= sqrt(no); i++) 
     {
-       
-        if (no%i==0)
-        {
-            flag=1;
+        if (no % i == 0)
+         {
+            flag = 1;
             break;
         }
     }
-    if (flag==0)
-    {
-        printf("\nthis number is prime number");
+
+    if (flag == 0) {
+        printf("Number is prime\n");
+    } else {
+        printf("Number is not prime\n");
     }
-    else
-    {
-        printf("\nthis is not prime number");
-    }
+
+    return 0;
 }
