@@ -34,7 +34,7 @@ int main()  //Entry point function
                     break;
                 case 4:       //Delete
                     printf("Option Selected: Delete\n ");
-                    delete( &ptrArray,  &size);
+                    delete( *ptrArray,  &size);
                     break;
                 case 5:  //Search
                     
