@@ -2,23 +2,27 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void create(int **ptrArray, int *ptrSize) {
+void create(int **num, int *ptrSize) {
     int newSize;
     printf("\nEnter the number of elements to add: ");
     scanf("%d", &newSize);
 
-    *ptrArray = (int *)realloc(*ptrArray, (*ptrSize + newSize) * sizeof(int));
+    *num = (int *)realloc(*num, (*ptrSize + newSize) * sizeof(int));
 
-    if (*ptrArray == NULL) {
+    if (*num == NULL) {
         printf("\nMemory allocation failed");
         exit(1);
     }
 
     for (int i = *ptrSize; i < *ptrSize + newSize; i++) {
         printf("Enter element %d: ", i + 1);
-        scanf("%d", &(*ptrArray)[i]);
+        scanf("%d", &(*num)[i]);
     }
 
     *ptrSize += newSize;
     printf("%d elements added.\n", newSize);
 }
+//**ptrnum =&num
+// **ptrnum=*ptrnum
+//ptrnum
+//&*num

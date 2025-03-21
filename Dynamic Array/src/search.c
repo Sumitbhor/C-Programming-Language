@@ -1,9 +1,9 @@
 #include "../include/function.h"
 #include <stdio.h>
 
-int search(int *ptrArray, int size, int theelement) {
+int search(int *num, int size, int theelement) {
     for (int i = 0; i < size; i++) {
-        if (ptrArray[i] == theelement) {
+        if (num[i] == theelement) {
             return i;  // Return the index
         }
     }

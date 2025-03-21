@@ -4,7 +4,7 @@
 
 int main() {
     int element, result;
-    int *ptrArray = NULL;
+    int *num = NULL;
     int size = 0;
     int option;
 
@@ -24,11 +24,11 @@ int main() {
         switch (option) {
             case 1:
                 printf("Option Selected: Create\n");
-                create(&ptrArray, &size);
+                create(&num, &size);
                 break;
             case 2:
                 printf("Option Selected: Read\n");
-                read(ptrArray, size);
+                read(num, size);
                 break;
             case 3:
                 printf("Option Selected: Update\n");
@@ -36,13 +36,13 @@ int main() {
                 break;
             case 4:
                 printf("Option Selected: Delete\n");
-                delet(&ptrArray, &size);
+                delet(&num, &size);
                 break;
             case 5:
                 printf("Option Selected: Search\n");
                 printf("Enter the element to search: ");
                 scanf("%d", &element);
-                result = search(ptrArray, size, element);
+                result = search(num, size, element);
                 if (result == -1) {
                     printf("Element not found.\n");
                 } else {
@@ -51,7 +51,7 @@ int main() {
                 break;
             case 6:
                 printf("Exiting program.\n");
-                free(ptrArray);
+                free(num);
                 return 0;
             default:
                 printf("Invalid option.\n");

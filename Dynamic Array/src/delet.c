@@ -2,21 +2,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void delet(int **ptrArray, int *size) {
+void delet(int **num, int *size) {
     int element, result;
     printf("Enter the element to delete: ");
     scanf("%d", &element);
 
-    result = search(*ptrArray, *size, element);
+    result = search(*num, *size, element);
 
     if (result == -1) {
         printf("Element not found.\n");
     } else {
         for (int i = result; i < *size - 1; i++) {
-            (*ptrArray)[i] = (*ptrArray)[i + 1];
+            (*num)[i] = (*num)[i + 1];
         }
         (*size)--;
-        *ptrArray = (int *)realloc(*ptrArray, (*size) * sizeof(int));
+        *num = (int *)realloc(*num, (*size) * sizeof(int));
         printf("Element deleted successfully.\n");
     }
 }
