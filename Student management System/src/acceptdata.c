@@ -1,3 +1,4 @@
+#include<data.h>
 int acceptdata(struct Student * ptrstudent){
     printf("\n\nenter name of student : ");
     scanf("%s",& ptrstudent->name);

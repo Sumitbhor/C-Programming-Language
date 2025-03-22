@@ -1,16 +1,5 @@
-#include<data.h>
-#include"acceptdata.h"
- int totalstudent;
-
-
-int displaydata(struct Student student){
-    printf("\nname: %s",student.name);
-    printf("\nroll no : %d",student.rollno);
-    printf("\nage : %d",student.age);
-    printf("\nstd : %d",student.std);
-    printf("\ndiv : %s",student.div);
-}
-
+#include"../include/data.h"
+int totalstudent;
 int main(){
     printf("total number of student ");
     scanf("%d",&totalstudent); 
@@ -70,7 +59,6 @@ int main(){
             break;
         case 4 : //4.delet : remove a record from dataset
         
-        int srno;
         printf("Enter the sr.no number of the student whose data you want to delete:");
         scanf("%d",&srno);
         for (int i = srno-1; i < totalstudent; i++){
@@ -89,5 +77,7 @@ int main(){
  return 0;
 }
 
+//g++ -Iinclude -c ./src/acceptdata.c -o ./build/acceptdata.o
+//g++ -Iinclude -c ./src/displaydata.c -o ./build/displaydata.o
 //g++ -Iinclude -c ./src/main.c -o ./build/main.o
-//g++ ./build/main.o -o ./build/output.exe
+//g++ ./build/main.o ./build/acceptdata.o ./build/displaydata.o -o ./build/output.exe
