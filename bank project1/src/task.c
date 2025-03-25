@@ -18,7 +18,7 @@ bool validate(int pinNumber){
       return status;
 }
 
-void operation(struct Customer *  pcustomer){
+void operation(struct Customer *pcustomer){
     printf("\nWelcome to HDFC Bank\n");
     printf("\n Enter your pin for banking");
     int pinNumber;
