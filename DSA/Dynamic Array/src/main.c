@@ -14,10 +14,9 @@ int main() {
         printf("\nCRUD Operation Menu\n");
         printf("1. Create\n");
         printf("2. Read\n");
-        printf("3. Update\n");
-        printf("4. Delete\n");
-        printf("5. Search\n");
-        printf("6. Exit\n");
+        printf("3.. Delete\n");
+        printf("4. Search\n");
+        printf("5. Exit\n");
         printf("Choose an option: ");
         scanf("%d", &option);
 
@@ -29,10 +28,6 @@ int main() {
             case 2:
                 printf("Option Selected: Read\n");
                 read(num, size);
-                break;
-            case 3:
-                printf("Option Selected: Update\n");
-                // Add update logic
                 break;
             case 4:
                 printf("Option Selected: Delete\n");

@@ -22,7 +22,3 @@ void create(int **num, int *ptrSize) {
     *ptrSize += newSize;
     printf("%d elements added.\n", newSize);
 }
-//**ptrnum =&num
-// **ptrnum=*ptrnum
-//ptrnum
-//&*num

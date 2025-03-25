@@ -1,4 +1,0 @@
-Name :sumit
-rollno :4
-age :56
-marks :565
