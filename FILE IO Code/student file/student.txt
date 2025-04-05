@@ -1,20 +1,8 @@
-name:omkar
-roll no:55
-DIV:55
-grade:55
-name:omkar
-roll no:55
-DIV:55
-grade:55
-name:omkar
-roll no:55
-DIV:55
-grade:55
-name:omkar
-roll no:55
-DIV:55
-grade:55
-name:omkar
-roll no:55
-DIV:55
-grade:55
+name:sumit
+roll no:13
+DIV:8
+grade:5
+name:sanika
+roll no:5
+DIV:5
+grade:5

@@ -31,18 +31,17 @@ void readData(struct Student s1){
     printf("grade :%d\n",s1.grade);
 }
 
-void writeFile(struct Student s1,int num ){
+void writeFile(struct Student s1 ){
     FILE *file=NULL;
-    file=fopen("student.txt","w");
+    file=fopen("student.txt","a");
     if (file==NULL){
         printf("this file is not open");
     }
-    for (int i = 0; i < num; i++){
         fprintf(file,"name:%s\n", s1.name);
         fprintf(file,"roll no:%d\n", s1.rollNo);
         fprintf(file,"DIV:%d\n", s1.div);
         fprintf(file,"grade:%d\n", s1.grade);
-    }
+    
 }
 
 void readFile(){
@@ -64,23 +63,22 @@ void readFile(){
 }
 
 int main(){
-    struct Student s1 ;
     int num;
-   /*printf("enter total number of student data you want to add");
+    
+   printf("enter total number of student data you want to add");
     scanf("%d",&num);
+    struct Student s[num] ;
     for (int i = 0; i < num; i++)
     {
-        acceptData(&s1);
+        acceptData(&s[i]);
     }
     for (int i = 0; i < num; i++)
     {   
-        printf("****************************");    
-        readData(s1);
-        printf("****************************");
+        printf("\n****************************\n");    
+        readData(s[i]);
+        writeFile(s[i]);
+        printf("\n****************************\n");
     }
-   
-   
-    writeFile(s1,num);*/ 
-    readFile();
+    //readFile();
     return 1;
 }
