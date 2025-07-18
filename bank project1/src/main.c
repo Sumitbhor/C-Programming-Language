@@ -1,4 +1,4 @@
-#include"../include/data.h"
+#include"../include/data.h"3
 int main()
 {   
     // variable are pushed on stack 

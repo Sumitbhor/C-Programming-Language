@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
-int acceptdata(struct Student * ptrstudent);
-int displaydata(struct Student student);
+void acceptdata(struct Student * ptrstudent);
+void displaydata(struct Student student);
 
 struct Student
 {

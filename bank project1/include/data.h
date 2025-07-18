@@ -11,7 +11,7 @@
         int balance;
     };
     void coustmer_data();
-    void acceptData(struct Customer *   cust);
+    void acceptData(struct Customer *  cust);
     void printData(struct Customer *  pcustomer );
     void operation(struct Customer *  pcustomer );
 

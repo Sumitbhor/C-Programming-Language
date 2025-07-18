@@ -1,5 +1,5 @@
 #include<data.h>
-int acceptdata(struct Student * ptrstudent){
+void acceptdata(struct Student * ptrstudent){
     printf("\n\nenter name of student : ");
     scanf("%s",& ptrstudent->name);
     printf("\nenter roll no of student :");
@@ -10,4 +10,6 @@ int acceptdata(struct Student * ptrstudent){
     scanf("%d",&ptrstudent->std);
     printf("\nenter division of student : ");
     scanf("%s",&ptrstudent->div);
+
+   
 }
